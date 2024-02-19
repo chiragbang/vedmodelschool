@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+  }
+    
+    
+  
+  
+  .header-director {
+      min-height: 103px;
+      height: 100%;
+      background-color: black;
+  }
+  
+  .procedure-container{
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+     max-width: 1240px;
+     margin-inline: auto;
+      padding-block: 50px;
+      gap: 2rem;
+      overflow: hidden;
+    }
+  
+  
+  .procedure-container h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #e3a72f;
+    font-weight: 700;
+  }
+  
+  .procedure-grid{
+    display: grid;
+  grid-template-columns: auto auto;
+  
+  }
+  
+  .procedure-grid-item{
+    padding: 10px;
+    /* border-right: 1px solid black; */
+  }
+  
+  .procedure-grid-item:last-child{
+    background: #e3a72f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #e3a72f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffffff, #e3a72f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border: 1px solid black;
+  }
+  
+  .procedure-grid-item h2{
+    text-align: center;
+  }
+
+  .procedure-grid-item h3{
+    font-size: 2rem;
+  }
+  
+  .procedure-grid-item p{
+    padding: 10px;
+    font-weight: 800;
+  }
+  
+  .procedure-grid-item ul{
+    line-height: 4rem;
+    padding-inline: 20px;
+    list-style-type: disc;
+  }
+
+  .procedure-underline{
+    border: 0; /* Remove default border */
+    height: 2px; /* Set height of the line */
+    background-color: #333; /* Set color of the line */
+    margin-top: 20px ; 
+  }
+  
+  .procedure-button{
+    background: black;
+    color: aliceblue;
+    font-size: 15px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 50px;
+    border: 1px solid aliceblue;
+  }
+
+  .procedure-button:hover{
+    cursor: pointer;
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+
+
+  .procedure-2{
+    max-width: 1240px;
+    margin-inline: auto;
+  }
+
+  .procedure-2 h1{
+    color: #e3a72f;
+    text-align: center;
+  }
+
+  .procedure-documents{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px solid black;
+
+  }
+
+  .procedure-grid-items{
+    padding-block: 10px;
+    padding-inline: 20px;
+    line-height: 40px;
+    border-right: 1px solid black;
+  }
+
+  .procedure-grid-items h2{
+    border-bottom: 1px solid black;
+  }
+
+  .procedure-grid-items ul{
+    padding-inline: 20px;
+    list-style-type: disc;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media only screen and (max-width: 1024px) {
+    .procedure-grid{
+      grid-template-columns: auto;
+    }
+
+    .procedure-container{
+      padding-inline: 20px;
+    }
+  
+    .procedure-grid-item{
+      border-right: none;
+      border-bottom: 1px solid black;
+    }
+  
+    .procedure-container h1{
+      font-size: 2rem;
+      text-align: center;
+      color: #e3a72f;
+      font-weight: 700;
+    }
+  }

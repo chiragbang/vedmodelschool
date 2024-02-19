@@ -1,0 +1,94 @@
+
+
+.header-vision {
+    align-items: center;
+    min-height: 103px;
+    
+/* width: 100vw; */
+    /* height: 100%; */
+    background-color: black;
+}
+
+.vision-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin-inline: auto;
+    padding-block: 85px;
+    gap: 5rem;
+    overflow: hidden;
+}
+
+.left-vision h1 {
+    font-size: 3rem;
+    color: #e3a72f;
+}
+
+.left-vision .underline {
+    border: 0;
+    height: 2px;
+    background-color: black;
+    margin: 10px 0;
+}
+
+.left-vision p {
+    font-size: 1.2rem;
+}
+
+.vision-image {
+    object-fit: cover;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+
+}
+
+.vision-img {
+    border-radius: 50px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .vision-hero {
+        padding-inline: 20px;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .left-vision h1 {
+        font-size: 2rem;
+    }
+
+    
+
+    .left-vision p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .vision-hero {
+        padding-inline: 20px;
+        flex-wrap: wrap;
+        place-content: center;
+    }
+
+    .left-vision h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .vision-hero {
+        padding-inline: 20px;
+        place-content: center;
+        flex-wrap: wrap;
+    }
+}

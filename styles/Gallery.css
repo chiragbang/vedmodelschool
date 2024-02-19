@@ -1,0 +1,110 @@
+
+
+.main{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.header-director {
+    
+  min-height: 103px;
+  height: 100%;
+  background-color: black;
+}
+
+
+
+
+
+.main h1{
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: 5% 0 2% 0;
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: 650;
+  letter-spacing: 1.5px;
+  color: black;
+}
+
+.main h1 span{
+  color: #e3a72f;
+}
+
+.main .gallery{
+  position: relative;
+  height: auto;
+  width: 90%;
+  margin: auto;
+  padding: 45px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5vh;
+  grid-auto-flow: dense;
+}
+
+.main .gallery .img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 14px #333;
+}
+.main .gallery .img:hover {
+  cursor: pointer;
+  transform: scale(1.05); /* Scale up by 10% on hover */
+  box-shadow: 0 0 20px #e3a72f; /* Change the shadow color and increase the size on hover */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.main .gallery .img:first-child{
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+
+.main .gallery .img:nth-child(2n+3){
+  grid-row-start: span 2;
+}
+
+.main .gallery .img:nth-child(4n+5){
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+
+.main .gallery .img:nth-child(6n+7){
+  grid-row-start: span ;
+}
+
+.main .gallery .img:nth-child(8n+9){
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+}
+
+.main .gallery .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+@media only screen and (max-width: 768px){
+  
+  .main .gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+
+@media only screen and (max-width: 430px){
+  
+  .main .gallery{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+

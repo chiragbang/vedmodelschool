@@ -1,0 +1,53 @@
+/* GoogleMap.css */
+
+/* Styles for iframe */
+   
+
+.google-map-iframe {
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+       
+    
+   /* width: 500px;*/
+   height: 400px; 
+}
+.google-map-container{
+    max-width: 540px;
+    width: 100%;
+}
+
+/* Styles for displayed information */
+.map-info-container {
+    margin-top: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.map-info-heading {
+    font-size: 2em;
+    color: #e3a72f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.map-info-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.map-info-section p {
+    margin: 0;
+}
+
+/* Styles for icons */
+.map-icon {
+    font-size: 20px;
+}
+
+
+  

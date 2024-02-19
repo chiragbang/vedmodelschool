@@ -1,0 +1,92 @@
+
+.cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 20px;
+  gap: 13rem;
+  max-width: 1200px;
+    margin-inline: auto;
+    width: 100%;
+}
+
+.form {
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cta-container .form .title {
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: 700;
+  text-align: left;
+}
+
+.title span {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #e3a72f;
+}
+
+.form hr{
+  border-top: 2px solid black; /* Set the border color, thickness, and style */
+  width: 100%; /* Adjust the width of the line as needed */
+}
+
+.form p {
+  max-width: 512px;
+}
+
+.address-map{
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Extra small devices (phones, 600px and below) */
+/* @media only screen and (max-width: 768px) {
+  .cta-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title{
+    line-height: 20px;
+  }
+
+  .title span{
+    font-size: 3rem;
+  }
+  
+} */
+
+@media only screen and (max-width: 600px) {
+  .cta-container{
+    /* padding: 20px; */
+   
+    width: 100%;
+   flex-wrap: wrap;
+   gap: 5rem;
+  }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .cta-container{
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .cta-container{
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+

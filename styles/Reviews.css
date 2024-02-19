@@ -1,0 +1,47 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+  
+  .swipeSlide{
+    max-width: 1540px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 50px;
+    padding-inline: 70px;
+    text-align: center; /* Added to center-align text */
+}
+
+.swiperSlide .testimonials{
+    /* max-width: 540px; */
+    width: 100%;
+    padding-block: 20px;
+    padding-inline: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.swiperSlide .slider-img2{
+    border-radius: 50px;
+    display: block; /* Ensure image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+}
+
+.swiperSlide h1{
+    padding-block: 10px;
+    font-size: 2.5rem;
+}
+
+.swiperSlide h2{
+    padding-block: 10px;
+    font-size: 1.5rem;
+}
+
+.swiperSlide p{
+    padding-block: 10px;
+}
+
+  

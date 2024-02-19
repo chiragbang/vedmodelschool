@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.main-container{
+    position: relative;
+    /* width: 100%; */
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2.5rem; */
+    /* background-color: aqua; */
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1540px; 
+}
+
+.about-container{
+   
+    margin-left: auto;
+    margin-right: auto;
+  
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    min-height: auto;
+}
+.about-container > h1{
+font-size: 30px;
+}
+.about-area{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    align-items: start;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    place-items: center;
+}
+
+.testimonials-container{
+ 
+    /* background: #fffc00; 
+    background: -webkit-linear-gradient(to right, #ffffff, #fffc00);  
+    background: linear-gradient(to right, #ffffff, #fffc00);  */
+    height: fit-content;
+    width: 100%;
+    max-width: 1320px;
+    margin: 80px auto 80px auto;
+    padding: 8px;
+    padding-block: 40px;
+    
+}
+
+
+/* @media only screen and (max-width: 425px) {
+    .about-area{
+    grid-template-columns: auto;
+    }
+} */
+
+/* @media only screen and (max-width: 768px) {
+    .about-area{
+    grid-template-columns: auto auto;
+    }
+
+} */
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .about-area{
+        grid-template-columns: auto;
+    }
+
+    .testimonials-container{
+        background-color: red;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .about-area{
+        grid-template-columns: auto auto;
+    }
+
+    .testimonials-container{
+        background-color: rgb(9, 9, 9);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .about-area{
+        grid-template-columns: auto auto;
+    }
+
+    .testimonials-container{
+        background-color: yellow;
+    }
+}
+
+/* Large devices (laptops/desktops, 1025px and up) */
+@media only screen and (min-width: 1025px) {
+    .about-area{
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .testimonials-container{
+        background-color: rgb(8, 165, 233);
+    }
+}
+

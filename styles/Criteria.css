@@ -1,0 +1,105 @@
+
+
+    
+  
+  
+  .header-director {
+      min-height: 103px;
+      height: 100%;
+      background-color: black;
+  }
+  
+  .criteria-container{
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+     max-width: 1240px;
+     margin-inline: auto;
+      padding-block: 50px;
+      gap: 2rem;
+      overflow: hidden;
+    }
+  .criteria-heading{
+    color: #e3a72f;
+    font-size: 55px;
+     text-align: center; 
+    font-weight: 800;
+    padding-block: 10px;
+    /* margin-top: 35px; */
+  }
+/*   
+  .criteria-container h1{
+    font-size: 55px;
+    text-align: center;
+    color: #e3a72f;
+    font-weight: 800;
+  } */
+  
+  .criteria-grid{
+    display: grid;
+  grid-template-columns: auto auto;
+  
+  }
+  
+  .criteria-grid-item{
+    padding: 10px;
+    /* border-right: 1px solid black; */
+  }
+  
+  .criteria-grid-item:last-child{
+    background: #e3a72f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #e3a72f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffffff, #e3a72f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border: 1px solid black;
+  }
+  
+  .criteria-grid-item h2{
+    text-align: center;
+  }
+
+  .criteria-grid-item h3{
+    font-size: 20px;
+  }
+  
+  .criteria-grid-item p{
+    padding: 10px;
+    font-weight: 800;
+  }
+  
+  .criteria-grid-item ul{
+    line-height: 4rem;
+    padding-inline: 20px;
+    list-style-type: disc;
+  }
+
+  .criteria-underline{
+    border: 0; /* Remove default border */
+    height: 2px; /* Set height of the line */
+    background-color: #333; /* Set color of the line */
+    margin-top: 20px ; 
+  }
+  
+  
+  @media only screen and (max-width: 1024px) {
+    .criteria-grid{
+      grid-template-columns: auto;
+    }
+
+    .criteria-container{
+      padding-inline: 20px;
+    }
+  
+    .criteria-grid-item{
+      border-right: none;
+      border-bottom: 1px solid black;
+    }
+  
+    .criteria-container h1{
+      font-size: 3rem;
+      text-align: center;
+      color: #e3a72f;
+      font-weight: 700;
+    }
+  }

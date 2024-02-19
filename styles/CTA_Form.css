@@ -1,0 +1,74 @@
+
+.cta-form{
+  height: 100%;
+  width: 100%;
+ 
+}
+
+.cta-form-content{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cta-form-fields{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.success-message {
+font-size: 18px;
+font-weight: 500;
+background-color: aliceblue;
+height: 100px;
+width: 300px;
+border-bottom: 5px solid green;
+border-radius: 10px;
+padding: 20px;
+transition: left 0.5s ease-in-out;
+text-align: center; /* Center the text horizontally */
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center; /* Center the text vertically */
+}
+
+.button-24 {
+  background: #e3a72f;
+  border: 1px solid #e3a72f;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  /* font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif; */
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #e3a72f;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+

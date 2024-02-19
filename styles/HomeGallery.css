@@ -1,0 +1,110 @@
+
+
+.marquee-container {
+  --space: 2rem;
+
+  display: grid;
+  align-content: center;
+  overflow: hidden;
+  gap: var(--space);
+  /* width: 100%; */
+  /* font-family: "Corben", system-ui, sans-serif; */
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.5;
+  /* padding: 20px; */
+  padding-block: 20px;
+  /* margin-block: 20px; */
+}
+
+.marquee {
+  --duration: 20s;
+  --gap: var(--space);
+
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  /* transform: skewY(-3deg); */
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+.marquee__group img {
+  max-width: clamp(10rem, 1rem + 28vmin, 20rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.marquee__group p {
+  background-image: linear-gradient(
+    75deg,
+    hsl(45, 80%, 50%) 0%,
+    hsl(46, 87%, 47%) 11%,
+    hsl(130, 96%, 50%) 22%,
+    hsl(131, 95%, 38%) 33%,
+    hsl(100, 78%, 42%) 44%,
+    hsl(65, 87%, 67%) 56%,
+    hsl(63, 92%, 51%) 67%,
+    hsl(78, 91%, 45%) 78%,
+    hsl(56, 90%, 50%) 89%,
+    hsl(67, 91%, 46%) 100%
+  );
+  
+  /* color: #000000; Black text color */
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+}
+
+.marks-name{
+  /* gap: 5px; */
+  text-align: center;
+}
+
+.student-name{
+  font-size: 15px;
+  color: #000000;
+}
+
+.student-name span{
+  font-size: 15px;
+  color: gray;
+}
+
+
+.marquee--borders {
+  border-block: 3px solid #e3a72f;
+  padding-block: 0.75rem;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: calc(var(--duration) / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}

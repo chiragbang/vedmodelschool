@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+.header-administrator {
+    min-height: 103px;
+    height: 100%;
+    background-color: black;
+}
+
+.administrator-hero {
+
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+max-width: 1240px;
+margin-inline: auto;
+ padding-block: 85px;
+ gap: 5rem;
+ overflow: hidden;
+}
+
+
+
+.left-administrator h1 {
+    font-size: 3rem;
+    color: #e3a72f;
+}
+
+.left-administrator .underline{
+    
+    border: 0; 
+    height: 2px; 
+    background-color: black; 
+    margin: 10px 0; 
+}
+
+.left-administrator p {
+    font-size: 1.2rem;
+}
+
+.administrator-image {
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    margin: auto;
+    animation: fadeInRight 2s ease;
+
+}
+
+.administrator-img {
+    border-radius: 50px;
+height: auto;
+    width: 100%;
+}
+
+.administrator-image h2,h3{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .administrator-hero {
+        padding-inline: 20px;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .left-administrator h1 {
+        font-size: 2rem;
+    }
+
+    .left-administrator p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .administrator-hero {
+        padding-inline: 20px;
+
+        flex-wrap: wrap;
+        place-content: center;
+
+    }
+
+    .left-administrator h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .administrator-hero {
+        padding-inline: 20px;
+
+        place-content: center;
+        flex-wrap: wrap;
+    }
+}
